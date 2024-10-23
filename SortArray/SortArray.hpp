@@ -9,8 +9,10 @@
 #ifndef SORTARRAY_HPP
 #define SORTARRAY_HPP
 
-// Function to perform bubble sort
-//namespace convention
-void bubbleSort(int arr[], int size);
+// Define namespace SortArrayNS
+namespace SortArrayNS {
+    // Function to perform bubble sort
+    void bubbleSort(int arr[], int size);
+}
 
 #endif // SORTARRAY_HPP
