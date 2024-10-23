@@ -1,14 +1,40 @@
-# SortArray
+# SortArray Project
 
-This project demonstrates the implementation of the Bubble Sort algorithm in C++. The program sorts a fixed-size array of integers and displays the state of the array after each comparison and swap.
+This project implements a simple **Bubble Sort** algorithm in C++, designed to demonstrate how arrays can be sorted in ascending order with step-by-step output during the sorting process. The project emphasizes modular programming by organizing the sorting function within a custom namespace `SortArrayNS`.
 
 ## Features
 
-- **Bubble Sort Algorithm**: The sorting algorithm is implemented step-by-step, swapping adjacent elements if they are out of order.
-- **Step-by-Step Visualization**: After each comparison and possible swap, the current state of the array is printed to the console, allowing users to follow the sorting process in detail.
+- **Bubble Sort Algorithm**: Sorts an array of integers using the bubble sort algorithm, which repeatedly compares adjacent elements and swaps them if necessary.
+- **Namespace Encapsulation**: The sorting logic is encapsulated within the `SortArrayNS` namespace, promoting better code structure and avoiding conflicts.
+- **Step-by-step Visualization**: The program outputs the intermediate state of the array after every comparison and swap, allowing the user to follow the sorting process closely.
 
-## How to Run
+## Project Structure
 
-1. Clone the repository:
+- `main.cpp`: Contains the main function that initializes the array and invokes the `bubbleSort` function from the `SortArrayNS` namespace.
+- `SortArray.cpp`: Implements the `bubbleSort` function, which sorts the array and provides output after each step.
+- `SortArray.hpp`: Header file declaring the `bubbleSort` function and defining the `SortArrayNS` namespace.
+
+## Usage
+
+### Prerequisites
+
+To run this project, you need a C++ compiler such as `g++`.
+
+### Compiling and Running the Program
+
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/SortArray.git
+   git clone <repository-url>
+
+Navigate to the project directory:
+cd SortArray
+
+
+Compile the program:
+g++ -o SortArray main.cpp SortArray.cpp
+
+
+Run the program:
+./SortArray
+
+
